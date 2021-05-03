@@ -90,6 +90,17 @@ html{
     .ima>img{
       height: 100px;
     }
+    .bod{
+      margin: 100px 100px 0px 100px;
+      display: flex;
+      align-items: center;
+      gap: 100px;
+    }
+    .bod>img{
+      height:500px;
+      margin: 0px;
+      padding: 0px;
+    }
 }
 @media screen and (max-width: 978px)
 {
@@ -114,6 +125,19 @@ html{
       object-fit: cover;
       width: 100%;
       max-height: 100%;
+    }
+    .bod{
+      margin: 100px 10px 0px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .bod>img{
+      max-width: 100%;
+      height:300px;
+      margin: 0px;
+      padding: 0px;
     }
 }
 
@@ -219,6 +243,7 @@ html{
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .ima{
   margin-top: 25px;
@@ -241,18 +266,7 @@ h4{
 
 /*header*/
 
-.bod{
-  margin: 100px 100px 0px 100px;
-  display: flex;
-  align-items: center;
-  gap: 100px;
 
-}
-.bod>img{
-  height:400px;
-  margin: 0px;
-  padding: 0px;
-}
 .col{
   /* color: #d4a59a; */
   color: #ecdce9;
