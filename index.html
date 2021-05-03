@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="enspire.css">
     <link rel="stylesheet" href="/ENspire/enspire.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Zen+Dots&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>ENspire 2021</title>
 </head>
+
 <body>
     <div class="heading">
         <nav class="navbar">
             <div id="logo">
-              <a href=""><img src="logo only-01.png" alt="LOGO"></a>
+                <a href=""><img src="logo only-01.png" alt="LOGO"></a>
             </div>
             <img src="ENspire_IIIT.png" alt="" class="logo2">
-            <div>
-            <ul class="item">
-              <li><a href="https://e-cell-iiitl.netlify.app/">Home</a></li>
-              <li><a href="https://e-cell-iiitl.netlify.app/events">Our Events</a></li>
-              <li><a href="#">Our Sponsors</a></li>
-              <li><a href="https://e-cell-iiitl.netlify.app/team.html">Teams</a></li>
-            </ul>
+            <div class="sidenavlist">
+                <ul class="item">
+                    <li><a href="https://e-cell-iiitl.netlify.app/">Home</a></li>
+                    <li><a href="https://e-cell-iiitl.netlify.app/events">Our Events</a></li>
+                    <li><a href="#">Our Sponsors</a></li>
+                    <li><a href="https://e-cell-iiitl.netlify.app/team.html">Teams</a></li>
+                </ul>
             </div>
-          </nav>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul>
+                    <a href="https://e-cell-iiitl.netlify.app/">Home</a>
+                    <a href="https://e-cell-iiitl.netlify.app/events">Our Events</a>
+                    <a href="#">Our Sponsors</a>
+                    <a href="https://e-cell-iiitl.netlify.app/team.html">Teams</a>
+            </div>
+            <span onclick="openNav()" class="sidenavbutton">
+                <div class="container">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </span>
+        </nav>
     </div>
     <div class="bod">
         <!-- <img  class="animate__animated animate__fadeInUp" src="enspire-01-01.svg" alt=""> -->
@@ -74,7 +93,7 @@
                 <p>A quiz conducted by the E-Cell IIIT Lucknow which will test the mettle of the
                     participants competing in the event to prove their Business & Tech
                     Knowledge to win exciting prizes.</p>
-            </div>          
+            </div>
         </div>
         <div class="holder">
             <div class="event1 event">
@@ -89,8 +108,9 @@
                 <p>Fulfill your dream of being Elon Musk, participants will spend a day in the shoes of
                     a CEO handling three fictional crises and experiencing what it truly
                     means to be a leader.</p>
-            </div>          
-        </div><div class="holder">
+            </div>
+        </div>
+        <div class="holder">
             <div class="event2 event">
                 <h4>Tagline</h4>
                 <hr>
@@ -105,8 +125,9 @@
                 <p>Participants create a poster advertising a Product and showcasing their creative
                     abilities. The ones which are truly breathtaking win prizes.</p>
             </div>
-                      
-        </div><div class="holder">
+
+        </div>
+        <div class="holder">
             <div class="event1 event">
                 <h4>EN-Talks</h4>
                 <hr>
@@ -118,8 +139,9 @@
                 <hr>
                 <p>“All work and no play makes Jack a dull boy”- fun online gaming event among students
                     from across India competing to get some headshots, some goals, and some prizes.</p>
-            </div>          
-        </div><div class="holder">
+            </div>
+        </div>
+        <div class="holder">
             <div class="event1 event">
                 <h4>Movie Night</h4>
                 <hr>
@@ -129,7 +151,7 @@
                 <h4>Mystery Event</h4>
                 <hr>
                 <p>It won’t be much of a mystery now if we tell you about it ;)</p>
-            </div>          
+            </div>
         </div>
     </div>
     <div class="apply-now">
@@ -137,25 +159,39 @@
     </div>
     <!-- Apply Now -->
     <div class="footer">
-        
         <div class="sponsers">
             <h1 class="col">Previous Sponsors</h1>
             <div class="ima">
-            <img src="https://ohcampus.com/uploads/sitelogo/logo_15.png" alt="">
-            <img src="https://s3.amazonaws.com/VideoThumbnails/Website+Images/partner_logos/blogadda.png" alt="">
-            <img src="https://cloudsploit.com/images/logos/cloudsploit_by_aqua_A02.png" alt="">
-            <img itemprop="logo" src="https://cdn.shopify.com/s/files/1/0092/2969/7086/files/Copy_of_Untitled_6_large.png?v=1559763460" alt="Lensfit.com® - Eyeglasses, Sunglasses, Contact Lens">
+                <img src="https://ohcampus.com/uploads/sitelogo/logo_15.png" alt="">
+                <img src="https://s3.amazonaws.com/VideoThumbnails/Website+Images/partner_logos/blogadda.png" alt="">
+                <img src="https://cloudsploit.com/images/logos/cloudsploit_by_aqua_A02.png" alt="">
+                <img itemprop="logo"
+                    src="https://cdn.shopify.com/s/files/1/0092/2969/7086/files/Copy_of_Untitled_6_large.png?v=1559763460"
+                    alt="Lensfit.com® - Eyeglasses, Sunglasses, Contact Lens">
             </div>
-            
         </div>
         <div class="social_handles">
             <ul>
-                <li><a href="https://www.facebook.com/ecelliiitl" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.facebook.com/ecelliiitl" target="_blank"><i class="fa fa-facebook"></i></a>
+                </li>
                 <li><a href="https://twitter.com/ecell_iiitl" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/ecell_iiitl/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/e-cell-iiit-lucknow/mycompany/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/ecell_iiitl/" target="_blank"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/company/e-cell-iiit-lucknow/mycompany/" target="_blank"><i
+                            class="fa fa-linkedin"></i></a></li>
             </ul>
         </div>
     </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
+
 </html>
