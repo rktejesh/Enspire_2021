@@ -33,9 +33,9 @@
     <div class="heading">
         <nav class="navbar">
             <div id="logo">
-                <a href=""><img src="logo only-01.png" alt="LOGO"></a>
+                <a href=""><img src="/Untitled-1-01.png" alt="LOGO"></a>
             </div>
-            <div class="enspire-logo"><img src="ENspire_IIIT.png" alt="" class="logo2"></div>
+            <div class="enspire-logo"><img src="/ENspire_IIIT-01.png" alt="" class="logo2"></div>
             <div class="sidenavlist">
                 <ul>
                     <li><a href="https://e-cell-iiitl.netlify.app/">Home</a></li>
@@ -395,18 +395,9 @@
             </div>
         </div>
 
+
+
         <div id="infoMenu"></div>
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "250px";
-            }
-
-            /* Set the width of the side navigation to 0 */
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-
-        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.js"
             integrity="sha512-XnvEFIQIK4NvMki+6FYKTM7XdnsbDAqHB2KLXfgFkafRQBtKOkLZQYjf7ydXd8OfrAn8vWS68ESil4GHtpdqPQ=="
             crossorigin="anonymous"></script>
@@ -417,12 +408,13 @@
             var myFullpage = new fullpage('#fullpage', {
                 anchors: ['Home', 'AboutUs', 'Events', 'Merch', 'ContactUs'],
                 navigation: true,
-                navigationPosition: 'right',
+                navigationPosition: 'left',
                 verticalCentered: true,
                 navigationTooltips: ['Home', 'About Us', 'Events', 'Sponsors', 'Contact Us'],
                 slidesNavigation: false,
                 recordHistory: false,
-                scrollOverflow: true
+                scrollOverflow: true,
+                showActiveTooltip: false,
             });
 
             var countDownDate = new Date("June 25, 2021 00:00:00").getTime();
@@ -453,6 +445,15 @@
                 clearInterval(bannerTimer);
                 bannerTimer = setInterval(bannerSwitcher, 5000)
             });
+
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
         </script>
 </body>
 
