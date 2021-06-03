@@ -468,7 +468,7 @@ h4 {
   height: 0;
   content: "";
   display: block;
-  padding-bottom: 100%;
+  padding-bottom: 50%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -481,7 +481,7 @@ h4 {
     grid-template-areas: "a";
   }
   .card:before {
-    padding-bottom: 80%;
+    padding-bottom: 100%;
   }
 }
 
