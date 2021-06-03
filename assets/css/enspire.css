@@ -456,7 +456,7 @@ h4 {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "a";
-  gap: 1.5em;
+  /*gap: 1.5em;*/
   width: 80%;
   justify-content: flex-end;
   opacity: 0;
@@ -468,7 +468,7 @@ h4 {
   height: 0;
   content: "";
   display: block;
-  padding-bottom: 50%;
+  padding-bottom: 100%;
 }
 
 @media screen and (max-width: 1200px) {
