@@ -220,10 +220,10 @@ body {
 }
 /* Footer */
 .social_handles {
-  min-height: 100px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: black;
 }
 
@@ -273,8 +273,6 @@ body {
   background-color: #0077b5;
 }
 
-.social_handles 
-
 .apply-now button {
   cursor: pointer;
   position: relative;
@@ -323,6 +321,27 @@ h4 {
   font-family: "Josefin Sans", sans-serif;
 }
 
+.bottom-navbar {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+#bottom-navbar-text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  .bottom-navbar {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /*header*/
 .col {
   /* color: #d4a59a; */
@@ -525,7 +544,7 @@ h4 {
 .card-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
+  -o-object-fit: fill;
   object-fit: cover;
 }
 .card-title {
@@ -563,6 +582,11 @@ h4 {
   padding: 10px;
   z-index: 6;
   margin: 0%;
+  transition: cubic-bezier(1, 0, 0, 1);
+}
+
+.card-text h5:hover {
+  transform: scale(1.1);
 }
 
 .social i {
@@ -587,6 +611,10 @@ h4 {
   align-items: center;
   border-radius: 80px;
 }
+
+.social a {
+  text-decoration: none;
+}
 .social i:nth-of-type(1) {
   -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s;
@@ -603,7 +631,9 @@ h4 {
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
+
 .card:hover i {
+  display: block;
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -623,6 +653,7 @@ h4 {
   padding: 0%;
   white-space: nowrap;
 }
+
 .card:hover button {
   transform: scale(35);
 }
@@ -692,11 +723,11 @@ h4 {
 }
 
 #banner1:checked ~ nav label:nth-of-type(1) .progressbar-fill {
-  animation: progressBarFill 5s linear;
+  animation: progressBarFill 8s linear;
 }
 
 #banner2:checked ~ nav label:nth-of-type(2) .progressbar-fill {
-  animation: progressBarFill 5s linear;
+  animation: progressBarFill 8s linear;
 }
 
 #banner1:checked ~ nav label:nth-of-type(1) {

@@ -282,6 +282,29 @@
         </div>
         <div class="section fp-auto-height">
             <div class="social_handles">
+                <div class="bottom-navbar">
+                    <div id="bottom-navbar-text">
+                        <div id="logo"><img src="./assets/img/Untitled-1-01.png"></div>
+                        <h3>ECell of IIIT Lucknow</h3>
+                    </div>
+                    <div id="bottom-navbar-text">
+                        <h3>About</h3>
+                        <a href="https://e-cell-iiitl.netlify.app/team.html" target="_blank">Team</a><br>
+                        <a href="">Sponsors</a><br>
+                        <a href="https://e-cell-iiitl.netlify.app/gallery.html" target="_blank">Gallery</a><br>
+                    </div>
+                    <div id="bottom-navbar-text">
+                        <h3>Links</h3>
+                        <a href="https://e-cell-iiitl.netlify.app/" target="_blank">Ecell website</a><br>
+                        <a href="https://e-cell-iiitl.netlify.app/events" target="_blank">Events</a>
+
+                    </div>
+                    <div id="bottom-navbar-text">
+                        <h3>Reach Us</h3>
+                        <a>enspire@iiitl.ac.in</a><br>
+                        <a>ecell@iiitl.ac.in</a>
+                    </div>
+                </div>
                 <ul>
                     <li><a href="https://www.facebook.com/ENspireiiitl/" target="_blank"><i
                                 class="fa fa-facebook"></i></a>
@@ -308,7 +331,7 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script type="text/javascript">
             var myFullpage = new fullpage('#fullpage', {
-                anchors: ['Home', 'AboutUs', 'Events', 'Merch', 'ContactUs'],
+                anchors: ['Home', 'AboutUs', 'Merch', 'Events', 'ContactUs'],
                 navigation: true,
                 navigationPosition: 'left',
                 verticalCentered: true,
@@ -341,11 +364,10 @@
                 else $('.sec-1-input').first().prop('checked', true);
             }
 
-            var bannerTimer = setInterval(bannerSwitcher, 5000);
-
+            var bannerTimer = setInterval(bannerSwitcher, 8000);
             $('nav .controls label').click(function () {
                 clearInterval(bannerTimer);
-                bannerTimer = setInterval(bannerSwitcher, 5000)
+                bannerTimer = setInterval(bannerSwitcher, 8000)
             });
 
             function openNav() {
