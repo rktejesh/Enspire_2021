@@ -548,7 +548,12 @@ h4 {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.055),transparent,rgba(0, 0, 0, 0.753));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.055),
+    transparent,
+    rgba(0, 0, 0, 0.753)
+  );
 }
 .card-img {
   position: absolute;
@@ -945,3 +950,100 @@ a.float:active + div.label-container .iframediscord {
 /* 
 -------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------- */
+#agenda {
+  color: white;
+  text-align: center;
+  padding: 5em 1em;
+}
+
+#agenda .section-heading,
+#agenda .agenda-subheading {
+  font-size: 1.4em;
+  padding-bottom: 0;
+  margin: 0 auto;
+}
+
+#agenda .agenda-subheading {
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  max-width: 450px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 0.8em;
+  margin-top: -5px;
+  color: #9a9a9a;
+}
+
+@media all and (min-width: 576px) {
+  #agenda {
+    padding: 8em 2em;
+  }
+}
+
+.events-container {
+  display: flex;
+}
+
+.event-title-container {
+  width: 50%;
+}
+
+.event-hours-container {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.event-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.event-icon {
+  width: 40px;
+  display: inline-block;
+}
+
+.event-hours {
+  font-weight: 600;
+  border: 1px solid transparent;
+  text-align: right;
+}
+
+
+.event-title {
+  border: 1px solid white;
+  position: relative;
+}
+
+.event-title:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 30px;
+  bottom: -45px;
+  left: -1px;
+  background-color: white;
+}
+
+.event-title:last-child:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  bottom: -90px;
+  left: -5px;
+  background-color: white;
+}
+
+.event-title,
+.event-hours {
+  padding: 1.5em 1em;
+  font-size: 1.15em;
+  margin-bottom: 3em;
+}
