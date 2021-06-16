@@ -548,7 +548,12 @@ h4 {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.055),transparent,rgba(0, 0, 0, 0.753));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.055),
+    transparent,
+    rgba(0, 0, 0, 0.753)
+  );
 }
 .card-img {
   position: absolute;
@@ -939,9 +944,6 @@ a.float:active + div.label-container .iframediscord {
   }
 }
 
-.speakers {
-  display: flex;
-}
 /* 
 -------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------- */
@@ -963,14 +965,6 @@ a.float:active + div.label-container .iframediscord {
   padding-bottom: 1em;
   max-width: 450px;
   font-weight: 600;
-}
-
-.section-subtitle {
-  font-weight: 800;
-  font-style: italic;
-  font-size: 0.8em;
-  margin-top: -5px;
-  color: #9a9a9a;
 }
 
 @media all and (min-width: 576px) {
@@ -1008,12 +1002,16 @@ a.float:active + div.label-container .iframediscord {
   font-weight: 600;
   border: 1px solid transparent;
   text-align: right;
+  line-height: 25px;
+  white-space: nowrap;
 }
-
 
 .event-title {
   border: 1px solid white;
   position: relative;
+  text-align: left;
+  line-height: 25px;
+  white-space: nowrap;
 }
 
 .event-title:after {
@@ -1041,4 +1039,112 @@ a.float:active + div.label-container .iframediscord {
   padding: 1.5em 1em;
   font-size: 1.15em;
   margin-bottom: 3em;
+}
+
+.speakers-list {
+  display: grid;
+
+  justify-content: center;
+  gap: 1em;
+}
+
+.speakers-card:nth-child(1) {
+  grid-area: a1;
+}
+.speakers-card:nth-child(2) {
+  grid-area: a2;
+}
+.speakers-card:nth-child(3) {
+  grid-area: a3;
+}
+.speakers-card:nth-child(4) {
+  grid-area: a4;
+}
+.speakers-card:nth-child(5) {
+  grid-area: a5;
+}
+
+.speakers-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speakers-card {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 1.5s;
+}
+
+.speakers-card:hover {
+  transform: scale(1.05);
+}
+
+.speakers-img {
+  object-fit: contain;
+  width: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+  .speakers-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "a1"
+      "a2"
+      "a3"
+      "a4"
+      "a5";
+    width: 90%;
+    padding-top: 70px;
+  }
+  .speakers-container {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .speakers-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "a1"
+      "a2"
+      "a3"
+      "a4"
+      "a5";
+    width: 70%;
+    padding-top: 70px;
+  }
+  .speakers-container {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .speakers-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "a1 a1 a2 a2"
+      "a3 a3 a4 a4"
+      ". a5 a5 .";
+    width: 80%;
+    height: 85%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .speakers-list {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "a1 a1 a1 a1 a2 a2 a2 a2 a3 a3 a3 a3"
+      ". . a4 a4 a4 a4 a5 a5 a5 a5 . .";
+    width: 60%;
+    height: 85%;
+  }
 }
