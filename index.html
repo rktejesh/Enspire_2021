@@ -132,7 +132,7 @@
                                         class="fab fa-twitter"></i></a>
                             </div>
                             <div class="card-title">
-                                <a>Million Dollar Idea</a>
+                                <h3>Million Dollar Idea</h3>
                                 <hr>
                                 <p>27th JUNE</p>
                                 <div class="card-text">
@@ -186,7 +186,7 @@
                                         class="fab fa-twitter"></i></a>
                             </div>
                             <div class="card-title">
-                                <a>Treasure Hunt</a>
+                                <h3>Treasure Hunt</h3>
                                 <hr>
                                 <p>25th JUNE - 27th JUNE</p>
                                 <div class="card-text">
@@ -211,7 +211,7 @@
                                         class="fab fa-twitter"></i></a>
                             </div>
                             <div class="card-title">
-                                <a>Gaming Night</a>
+                                <h3>Gaming Night</h3>
                                 <hr>
                                 <p>25th JUNE - 27th JUNE</p>
                                 <div class="card-text">
@@ -233,40 +233,94 @@
                 </div>
             </nav>
         </div>
-        <!-- <div class="section">
-            <section id="agenda">
-                <h2 class="section-heading">Timeline</h2>
-                <div style="display: flex; justify-content: space-evenly; ">
-                    <div class="events-container">
-                        <div class="event-hours-container">
-                            <p class="event-hours">25th June 2021 <br>10:00 AM</p>
-                            <p class="event-hours">25th June 2021 <br>5:00 PM</p>
-                            <p class="event-hours">25th June 2021 <br>6:00 PM</p>
-                            <p class="event-hours">25th June 2021 <br>7:00 PM</p>
-                            <p class="event-hours">25th June 2021 <br>8:00 PM</p>
-                            <p class="event-hours">25th June 2021 <br>11:00 PM</p>
-                            <p class="event-hours">26th June 2021 <br>2:00 PM</p>
-                            <p class="event-hours">26th June 2021 <br>6:00 PM</p>
-                            <p class="event-hours">26th June 2021 <br>8:00 PM</p>
-                            <p class="event-hours">26th June 2021 <br>11:00 PM</p>
-                        </div>
+        <div class="section">
+            <div class="tabbar">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'All Events')" id="defaultOpen">
+                        <h2>25th June 2021</h2>
+                    </button>
+                    <button class="tablinks" onclick="openCity(event, 'Current Events')">
+                        <h2>26th June 2021</h2>
+                    </button>
+                    <button class="tablinks" onclick="openCity(event, 'Future Events')">
+                        <h2>27th June 2021</h2>
+                    </button>
+                </div>
+            </div>
+            <div id="All Events" class="tabcontent">
+                <section id="agenda">
+                    <br>
+                    <br><br>
+                    <div style="display: flex; justify-content: space-evenly; ">
+                        <div class="events-container">
+                            <div class="event-hours-container">
+                                <p class="event-hours">25th June 2021 10:00 AM</p>
+                                <p class="event-hours">25th June 2021 5:00 PM</p>
+                                <p class="event-hours">25th June 2021 6:00 PM</p>
+                                <p class="event-hours">25th June 2021 7:00 PM</p>
+                                <p class="event-hours">25th June 2021 8:00 PM</p>
+                                <p class="event-hours">25th June 2021 11:00 PM</p>
+                            </div>
 
-                        <div class="event-title-container">
-                            <p class="event-title">Craz Ideas<br>Tagline Round 1</p>
-                            <p class="event-title">ENspire<br>Inaguaration</p>
-                            <p class="event-title">EN Talks<br>Aman Dhattarwal</p>
-                            <p class="event-title">Find X<br>Treasure Hunt</p>
-                            <p class="event-title">Crypto Crunch<br>Crypto event</p>
-                            <p class="event-title">Gaming Night<br>Movie Night</p>
-                            <p class="event-title">Tagline - Round 2<br><br></p>
-                            <p class="event-title">EN Talks<br>Kaustav Majumdar</p>
-                            <p class="event-title">Bizz Quiz - Round 1<br><br></p>
-                            <p class="event-title">Gaming Night<br>Movie Night</p>
+                            <div class="event-title-container">
+                                <p class="event-title">Craz Ideas | Tagline Round 1</p>
+                                <p class="event-title">ENspire Inaguaration</p>
+                                <p class="event-title">EN Talks | Aman Dhattarwal</p>
+                                <p class="event-title">Find X - Treasure Hunt</p>
+                                <p class="event-title">Crypto Crunch</p>
+                                <p class="event-title">Gaming Night | Movie Night</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </div> -->
+                </section>
+            </div>
+            <div id="Current Events" class="tabcontent">
+                <section id="agenda">
+                    <br><br><br>
+                    <div style="display: flex; justify-content: space-evenly; ">
+                        <div class="events-container">
+                            <div class="event-hours-container">
+                                <p class="event-hours">26th June 2021 2:00 PM</p>
+                                <p class="event-hours">26th June 2021 6:00 PM</p>
+                                <p class="event-hours">26th June 2021 8:00 PM</p>
+                                <p class="event-hours">26th June 2021 11:00 PM</p>
+                            </div>
+
+                            <div class="event-title-container">
+                                <p class="event-title">Tagline - Round 2</p>
+                                <p class="event-title">EN Talks | Kaustav Majumdar</p>
+                                <p class="event-title">Bizz Quiz - Round 1 </p>
+                                <p class="event-title">Gaming Night | Movie Night</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="Future Events" class="tabcontent">
+                <section id="agenda">
+                    <br><br><br>
+                    <div style="display: flex; justify-content: space-evenly; ">
+                        <div class="events-container">
+                            <div class="event-hours-container">
+                                <p class="event-hours">27th June 2021 12:00 PM</p>
+                                <p class="event-hours">27th June 2021 3:00 PM</p>
+                                <p class="event-hours">27th June 2021 5:00 PM</p>
+                                <p class="event-hours">27th June 2021 10:00 PM</p>
+                                <p class="event-hours">27th June 2021 11:00 PM</p>
+                            </div>
+
+                            <div class="event-title-container">
+                                <p class="event-title">Nayak - The Saviour Round 2</p>
+                                <p class="event-title">Bizz Quiz - Round 2</p>
+                                <p class="event-title">Million Dollar Idea Round 2</p>
+                                <p class="event-title">Stranger Things | Akshay Singh Magic</p>
+                                <p class="event-title">Gaming Night | Movie Night</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
         <div class="section">
             <section class="speakers-container">
                 <div class="speakers-list active-with-click">
@@ -462,7 +516,7 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script type="text/javascript">
             var myFullpage = new fullpage('#fullpage', {
-                anchors: ['Home', 'about','Events', 'Speakers', 'ContactUs'],
+                anchors: ['Home', 'about', 'Events', 'Speakers', 'ContactUs'],
                 navigation: true,
                 navigationPosition: 'left',
                 verticalCentered: true,
@@ -485,7 +539,7 @@
                     + minutes + " : " + seconds;
                 if (distance < 0) {
                     clearInterval(x);
-                    document.getElementById("countDown").innerHTML = "EXPIRED";
+                    document.getElementById("countDown").innerHTML = "The Event is Live";
                 }
             }, 1000);
 
@@ -552,6 +606,22 @@
                     }
                 });
             });
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
         </script>
 </body>
 
