@@ -1148,3 +1148,137 @@ a.float:active + div.label-container .iframediscord {
     height: 85%;
   }
 }
+
+.tab {
+  font-family: comfortaa;
+  overflow: hidden;
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 75px;
+}
+
+/* Style the buttons inside the tab */
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color: white;
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+  box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: white;
+  background-color: transparent;
+  -webkit-box-shadow: inset 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+  box-shadow: inset 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+  z-index: -1;
+  -webkit-animation-name: gradient-shadow;
+  animation-name: gradient-shadow;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+}
+
+.tab button {
+  color: white;
+  background-color: transparent;
+  float: center;
+  padding: 14px 16px;
+  border: white;
+  border-width: 20px;
+  width: inherit;
+  cursor: pointer;
+  overflow: hidden;
+  font-family: "Comfortaa", cursive;
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes gradient-shadow {
+  0% {
+    -webkit-box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+    box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+  }
+  20% {
+    -webkit-box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+    box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+  }
+  40% {
+    -webkit-box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0;
+    box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0;
+  }
+  60% {
+    -webkit-box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+    box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+  }
+  80% {
+    -webkit-box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+    box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+    box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+  }
+}
+
+@keyframes gradient-shadow {
+  0% {
+    -webkit-box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+    box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+  }
+  20% {
+    -webkit-box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+    box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+  }
+  40% {
+    -webkit-box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0;
+    box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0;
+  }
+  60% {
+    -webkit-box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+    box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+  }
+  80% {
+    -webkit-box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+    box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+    box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+  }
+}
