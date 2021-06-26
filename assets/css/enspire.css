@@ -1,11 +1,11 @@
 body {
+  margin: 0%  ;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   font-family: "Comfortaa", cursive;
   font-display: swap;
@@ -1281,4 +1281,15 @@ a.float:active + div.label-container .iframediscord {
     -webkit-box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
     box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
   }
+}
+/* 
+---------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------- */
+
+.poster-banner {
+  width: inherit;
+}
+
+.poster-banner img {
+  width: inherit;
 }
